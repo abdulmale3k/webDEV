@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+    </header>
+    
+    <div class="container">
+        <div class="product">
+            <img src="images/Rectangle 44.png" alt="Product 1">
+            <h2>Wind Turbines</h2>
+            <p>Power your projects efficiently with our high-performance Wind Turbines on sale. Reliable, eco-friendly, and built to last.</p>
+            <p>$10.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/Rectangle 57.png" alt="Product 1">
+            <h2>Solar Panels</h2>
+            <p>Efficient, eco-friendly solar panels: Harness the sun's power affordably and sustainably for your energy needs.</p>
+            <p>$10.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/Rectangle 52.png" alt="Product 1">
+            <h2>Hydro Pumps</h2>
+            <p>Power your projects efficiently with our high-performance hydro pumps. Reliable, eco-friendly, and built to last.</p>
+            <p>$10.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Second Row of Product Showcase -->
+        <div class="product">
+            <img src="images/Rectangle 44.png" alt="Product 1">
+            <h2>Wind Turbines</h2>
+            <p>Power your projects efficiently with our high-performance Wind Turbines on sale. Reliable, eco-friendly, and built to last.</p>
+            <p>$100.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/Rectangle 57.png" alt="Product 1">
+            <h2>Solar Panels</h2>
+            <p>Efficient, eco-friendly solar panels: Harness the sun's power affordably and sustainably for your energy needs.</p>
+            <p>$10.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/Rectangle 52.png" alt="Product 1">
+            <h2>Hydro Pumps</h2>
+            <p>Power your projects efficiently with our high-performance Hydro Pumps. Reliable, eco-friendly, and built to last..</p>
+            <p>$110.00</p>
+            <!-- Product Options -->
+            <div class="product-options">
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <aside class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="basket">
+            
+        </div>
+        <p>Amount to pay: <span class="amount-to-pay">$0.00</span> </p>
+        <button class="checkout">Checkout</button>
+    </aside>
+
+    <footer class="checkout-summary hidden">
+        <h2>Checkout Summary</h2>
+        <div class="checkout-items">
+        </div>
+        <p>Total Amount: <span class="exact-amount">$0.00</span></p>
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("complete-purchase-btn").addEventListener("click", function(event) {
+            event.preventDefault();
+            windows.alert("Payment was successful!");
+        });
+    </script>
+</body>
+</html>
